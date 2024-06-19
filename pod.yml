@@ -1,0 +1,16 @@
+apiVersion: v1 
+kind: Pod
+metadata:
+  name: ngnix
+  labels:
+    name: ngnix
+spec:
+  containers:
+  - name: ngnix
+    image: ngnix
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+    ports:
+      - containerPort: 80
