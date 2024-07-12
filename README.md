@@ -1,4 +1,4 @@
-# Learn Kubernates along with me!
+# Learn Kubernetes along with me!
 Resources - https://projects.100xdevs.com/
 
 ## Sample commands
