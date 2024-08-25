@@ -15,11 +15,30 @@ Resources - https://projects.100xdevs.com/
 * kubectl apply -f rs.yml
 * kubectl rollout history deployment/nginx-deployment
 * kubectl get pods -owide
+* kubectl logs -f nginx
+* kubectl create namespace backend-team
+* kubectl get namespaces
+* kubectl get pods -n my-namespace
+* kubectl config set-context --current --namespace=default
 
 ### Serivce Types: 
 > Service is a policy by which we access pods
-* Cluster IP - Default Service Type -> Exposes IP internally 
+> Services let you expose your pods to other pods/over the internet
+* Cluster IP - Default Service Type -> Exposes IP internally
 * Node Port - Exposes Node IP on a static port outside the cluster
 * LoadBalancer - Exposes service externally using cloud provider's load balancer
 
 > **NOTE**: Services use labels to select pods they target
+
+### Downsides of Services:
+* No centralized traffic management
+* Multiple certificates for every route
+* No centralized logic to handle rate limitting to all services
+
+
+### Ingress and Ingress Controller
+* An API object that manages external access to the services in a cluster, typically HTTP. 
+* Ingress exposes HTTP and HTTPS routes from outside the cluster to services within the clus9ter. 
+
+### Namespaces
+* Divides cluster resources between multiple users/teams
