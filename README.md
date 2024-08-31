@@ -20,6 +20,7 @@ Resources - https://projects.100xdevs.com/
 * kubectl get namespaces
 * kubectl get pods -n my-namespace
 * kubectl config set-context --current --namespace=default
+* kubectl describe configmap ecom-backend-config
 
 ### Serivce Types: 
 > Service is a policy by which we access pods
@@ -42,3 +43,7 @@ Resources - https://projects.100xdevs.com/
 
 ### Namespaces
 * Divides cluster resources between multiple users/teams
+
+### Secrets and config maps
+* To store the configuration of your application outside image/pod
+* 
